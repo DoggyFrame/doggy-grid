@@ -2,4 +2,4 @@
 
 Use sass to build grid layout.
 
-See [demo]().
+See [demo](http://doggyframe.github.io/doggy-grid/index.html).
