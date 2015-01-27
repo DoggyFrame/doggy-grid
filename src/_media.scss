@@ -1,0 +1,94 @@
+// media
+
+@media screen and (min-width: 1280px) {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            width: 100% / 12 * $i;
+            float: left;
+            padding-left:$grid-pad;
+            @include box-sizing();
+        }
+    }
+    @for $i from 1 through 11 {
+        .col-lg-pull-#{$i} {
+            position:relative;
+            right: 100% / 12 * $i;
+        }
+        .col-lg-push-#{$i} {
+            position:relative;
+            left: 100% / 12 * $i;
+        }
+        .col-lg-offset-#{$i} {
+            margin-left: 100% / 12 * $i;
+        }
+    }
+}
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            width: 100% / 12 * $i;
+            float: left;
+            padding-left:$grid-pad;
+            @include box-sizing();
+        }
+    }
+    @for $i from 1 through 11 {
+        .col-md-pull-#{$i} {
+            position:relative;
+            right: 100% / 12 * $i;
+        }
+        .col-md-push-#{$i} {
+            position:relative;
+            left: 100% / 12 * $i;
+        }
+        .col-md-offset-#{$i} {
+            margin-left: 100% / 12 * $i;
+        }
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+            width: 100% / 12 * $i;
+            float: left;
+            padding-left:$grid-pad;
+            @include box-sizing();
+        }
+    }
+    @for $i from 1 through 11 {
+        .col-sm-pull-#{$i} {
+            position:relative;
+            right: 100% / 12 * $i;
+        }
+        .col-sm-push-#{$i} {
+            position:relative;
+            left: 100% / 12 * $i;
+        }
+        .col-sm-offset-#{$i} {
+            margin-left: 100% / 12 * $i;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    @for $i from 1 through 12 {
+        .col-mn-#{$i} {
+            width: 100% / 12 * $i;
+            float: left;
+            padding-left:$grid-pad;
+            @include box-sizing();
+        }
+    }
+    @for $i from 1 through 11 {
+        .col-mn-pull-#{$i} {
+            position:relative;
+            right: 100% / 12 * $i;
+        }
+        .col-mn-push-#{$i} {
+            position:relative;
+            left: 100% / 12 * $i;
+        }
+        .col-mn-offset-#{$i} {
+            margin-left: 100% / 12 * $i;
+        }
+    }
+}

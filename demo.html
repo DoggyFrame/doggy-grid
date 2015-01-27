@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link href="dist/demo.css" rel="stylesheet">
+</head>
+<body>
+    <h1>This is demo page for doggy-grid.</h1>
+    <script>
+        var eleBody = document.body;
+        var html = [];
+
+        html.push('<h2>Normal grid</h2>');
+        for (var i = 1; i < 12; i++) {
+            html.push('<div class="row">');
+            html.push('<div class="col-' + i + '">' + i + '</div>');
+            html.push('<div class="col-' + (12 - i) + '">' + (12 - i) + '</div>');
+            html.push('</div>')
+        }
+
+        html.push('<h2>Offset grid</h2>');
+        for (var i = 0; i < 12; i++) {
+            html.push('<div class="row">');
+            html.push('<div class="col-1 col-offset-' + i + '">1</div>');
+            html.push('</div>')
+        }
+
+        html.push('<h2>Push and pull grid</h2>');
+        html.push('<div class="row">');
+        html.push('<div class="col-2 col-push-10">2</div>');
+        html.push('<div class="col-10 col-pull-2">10</div>');
+        html.push('<div class="col-2 col-push-1">2</div>');
+        html.push('<div class="col-2 col-push-2">2</div>');
+        html.push('<div class="col-2 col-push-3">2</div>');
+        html.push('</div>');
+
+        html.push('<h2>Media query grid</h2>');
+        html.push('<div class="row">');
+        html.push('<div class="col-2 col-md-4 col-sm-6 col-mn-8">lg=2 md=4 sm=6 mn=8</div>');
+        html.push('<div class="col-10 col-md-8 col-sm-6 col-mn-4">lg=10 md=8 sm=6 nm=4</div>');
+        html.push('</div>');
+
+        eleBody.innerHTML += html.join('');
+    </script>
+</body>
+</html>

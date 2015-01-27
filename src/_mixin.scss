@@ -1,0 +1,24 @@
+// mixin
+
+@mixin font-size($sizeValue: 1.6) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: ($sizeValue * 0.1) + rem;
+}
+
+@mixin cf() {
+    *zoom:1;
+    &:after {
+        content:"";
+        display:block;
+        clear:both;
+        height:0;
+        overflow:hidden;
+        visibility:hidden;
+    }
+}
+
+@mixin box-sizing() {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}

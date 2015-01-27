@@ -1,0 +1,32 @@
+@import "_normalize";
+@import "_vars";
+@import "_mixin";
+
+// global
+html {
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size:625%;
+}
+p, ul, ol {
+    margin:0;
+}
+ol, ul {
+    padding:0;
+    list-style:none;
+}
+textarea {
+    outline:none;
+}
+.cf {
+    @include cf();
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+
+@import "_grid";
