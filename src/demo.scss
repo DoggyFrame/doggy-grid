@@ -19,3 +19,6 @@ h2 {
         }
     }
 }
+a {
+    @include font-size(1.6);
+}
